@@ -1,0 +1,102 @@
+/* .options {
+    display: none;
+} */
+
+body {
+    background-color: #E5E7EB;
+    display: grid;
+}
+
+#library {
+    display: grid;
+    grid-template: repeat(3, minmax(150px, 170px)) / repeat(4, 1fr);
+    gap: 10px;
+}
+
+#add {
+    background-color: white;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: column;
+}
+
+#add label {
+    font-size: 0.75rem;
+}
+
+.divider input[type="text"],
+.divider input[type="number"] {
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+#add button {
+    border: 0;
+    border-radius: 16px;
+    background-color: cornflowerblue;
+}
+
+.book {
+    background-color: white;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.title {
+    font-weight: bold;
+    align-self: center;
+}
+
+.line {
+    min-height: 2px;
+    background-color: #E5E7EB;
+}
+
+.author,
+.pages,
+.read {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.options {
+    position: absolute;
+    top: -10px;
+    left: 40%;
+}
+
+#trash {
+    background-color: red;
+}
+
+#read {
+    background-color: green;
+}
+
+#unread {
+    background-color: orange;
+}
+
+/* .book:hover .options {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+} */
